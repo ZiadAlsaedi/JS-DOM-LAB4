@@ -6,6 +6,11 @@ let text3 = document.getElementById("color")
 
 let box=document.getElementById("box")
 
+text3.addEventListener('change',function() {
+  box.style.backgroundColor=text3.value 
+  console.log(text3.value);
+
+    })
 text.addEventListener("input",function() {
 let input =text.value
 box.style.width=input +"px"
@@ -16,10 +21,6 @@ box.style.width=input +"px"
     box.style.height=input2 +"px"
       })
 
-      text3.addEventListener('change',function() {
- let input3 =text3.value
-box.style.backgroundColor=input3 
-  })
 
 
   btn.addEventListener('click',function() {
